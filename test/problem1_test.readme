@@ -1,0 +1,30 @@
+This is the testing document for project "problem1".
+Before doing the tests, please ensure Python 3 are properly installed on your test machine.
+
+Suppose project "problem1" is deployed under the path P1_HOME on your local filesystem.
+The testing steps are listed as below:
+I.  go to P1_HOME/test, and run the "problem1_test_createLargeInputFile.py" with the following arguments to create "problem1_test4.dat":
+    >python problem1_test_createLargeInputFile.py problem1_test4.dat
+    what should be shown on screen is like below:
+    Successfully create problem1_test4.dat with 10000000 lines, and each line contain a float number 1.0！
+    Note："problem1_test4.dat" is not packaged in current "problem1" project since it is very large and used for 
+          large input file testing, so it is better to generate it at runtime according to step I.
+
+II. go to P1_HOME/test, and run the "problem1_test.py" with the following arguments to run automation test against "problem1.py":
+    >python problem1_test.py
+    what will be shown on screen maybe like below:
+    Finish Test1!   It costs 0.000304 seconds process time.
+    Test1 Pass!
+    Finish Test2!   It costs 0.000324 seconds process time.
+    Test2 Pass!
+    Finish Test3!   It costs 0.000282 seconds process time.
+    Test3 Pass!
+    Finish Test4!   It costs 22.778779 seconds process time.
+    Test4 Pass!          
+   
+
+Note: 
+For problem1, a simple automation test framework is implemented as above.
+Currently, there are four test cases that cover various testing aspect of "problem1.py", which could be easily extended in the future.
+The result of each test case together with its running time are included in the output.
+Please refer to the comments of each test function within "problem1_test.py" for detailed info.

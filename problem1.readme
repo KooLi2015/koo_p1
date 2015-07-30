@@ -1,0 +1,17 @@
+"problem1" is a project to calculate the number of floating-point from an input file and their sum.
+
+It is based on Python 3(https://docs.python.org/3/), and mainly consist of two parts:
+I.  the program "problem1.py" is used as the main program that provides the functionality 
+    (in function procFloatsFromFile())to calculate the number of floating-point from an input file 
+    and their sum
+II. there is a subfolder "test" under the home of this project which contains test scripts and data 
+    file for testing purpose: 
+    "test/problem1_test.py"
+    "test/problem1_test_createLargeInputFile.py"
+    "test/problem1_test1.dat"
+    "test/problem1_test2.dat"
+    "test/problem1_test3.dat"
+
+For detailed info on how to run these tests, please refer to "test/problem1_test.readme".
+Firstly, please ensure Python 3 is properly installed on your test machines both.
+
